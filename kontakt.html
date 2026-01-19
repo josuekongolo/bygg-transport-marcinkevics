@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Snekker Oslo | Gratis Tilbud | MARCINKEVICS</title>
+    <meta name="description" content="Kontakt oss for snekker eller transporttjenester i Oslo. Gratis befaring og tilbud. Ring eller send melding.">
+    <meta name="keywords" content="kontakt snekker oslo, gratis tilbud, befaring oslo, bygg og transport kontakt">
+    <meta name="author" content="BYGG OG TRANSPORT MARCINKEVICS">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kontakt Oss | BYGG OG TRANSPORT MARCINKEVICS">
+    <meta property="og:description" content="Kontakt oss for snekker eller transporttjenester i Oslo. Gratis befaring og tilbud.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Additional Form Styles -->
+    <style>
+        .form-group input.error,
+        .form-group select.error,
+        .form-group textarea.error {
+            border-color: #C62828;
+            box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1);
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Quick Contact Bar -->
+    <div class="quick-contact">
+        <div class="container quick-contact-container">
+            <div class="quick-contact-item">
+                <span>📞</span>
+                <a href="tel:+47900XXXXX">900 XX XXX</a>
+            </div>
+            <div class="quick-contact-item">
+                <span>📧</span>
+                <a href="mailto:post@marcinkevics-bygg.no">post@marcinkevics-bygg.no</a>
+            </div>
+            <div class="quick-contact-item">
+                <span>📍</span>
+                <span>Gamle Oslo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">BYGG <span>&</span> TRANSPORT</span>
+                <span class="logo-tagline">MARCINKEVICS</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Hjem</a>
+                <a href="byggtjenester.html" class="nav-link">Byggtjenester</a>
+                <a href="transporttjenester.html" class="nav-link">Transport</a>
+                <a href="om-oss.html" class="nav-link">Om Oss</a>
+                <a href="kontakt.html" class="nav-link nav-cta active">Kontakt</a>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontakt Oss</h1>
+            <p>Få et tilbud på bygg, transport - eller begge deler</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Ta Kontakt</h3>
+                    <p>Vi er klare til å hjelpe deg!</p>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+47900XXXXX">900 XX XXX</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>E-post</h4>
+                            <p><a href="mailto:post@marcinkevics-bygg.no">post@marcinkevics-bygg.no</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Hedmarksgata 9<br>0658 Oslo</p>
+                        </div>
+                    </div>
+
+                    <div class="opening-hours">
+                        <h4>Åpningstider</h4>
+                        <ul class="hours-list">
+                            <li><span>Mandag - Fredag</span><span>07:00 - 17:00</span></li>
+                            <li><span>Lørdag</span><span>Etter avtale</span></li>
+                            <li><span>Søndag</span><span>Stengt</span></li>
+                        </ul>
+                        <p class="mt-2"><small>Vi svarer normalt på henvendelser innen få timer.</small></p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section" id="befaring">
+                    <h3>Send Oss en Henvendelse</h3>
+
+                    <!-- Form Message -->
+                    <div id="form-message" class="form-message"></div>
+
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Navn <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Ditt fulle navn">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="900 00 000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-post <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="din@epost.no">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Adresse / Bydel</label>
+                            <input type="text" id="address" name="address" placeholder="F.eks. Grünerløkka, Oslo sentrum, etc.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Type tjeneste <span class="required">*</span></label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Velg type tjeneste...</option>
+                                <option value="bygg">Kun byggtjenester</option>
+                                <option value="transport">Kun transport</option>
+                                <option value="kombinert">Kombinert bygg og transport</option>
+                                <option value="usikker">Usikker - trenger rådgivning</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Beskrivelse av prosjektet <span class="required">*</span></label>
+                            <textarea id="description" name="description" required placeholder="Fortell oss hva du trenger hjelp med. Jo mer detaljer, jo bedre kan vi gi deg et presist tilbud."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="siteVisit" name="siteVisit">
+                                <label for="siteVisit">Jeg ønsker gratis befaring</label>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">Send Henvendelse</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Free Quote CTA -->
+            <div class="free-quote-cta">
+                <h3>Gratis Befaring og Tilbud</h3>
+                <p>Vi kommer gjerne for å se på prosjektet ditt og gi et komplett tilbud - inkludert både bygg og transport om du ønsker det. Befaringer er alltid gratis og uforpliktende.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section section-alt map-section">
+        <div class="container">
+            <h3>Finn Oss</h3>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.8!2d10.7849!3d59.9058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7d0d5a5c8f%3A0x0!2sHedmarksgata%209%2C%200658%20Oslo!5e0!3m2!1sno!2sno!4v1700000000000!5m2!1sno!2sno"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Kart over vår lokasjon i Hedmarksgata 9, Oslo">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <span class="logo-main">BYGG <span>&</span> TRANSPORT</span>
+                        <span class="logo-tagline">MARCINKEVICS</span>
+                    </div>
+                    <p>Kombinert snekker og transporttjenester i Oslo. Alt du trenger - bygg og transport i ett. Vi leverer kvalitetsarbeid med full logistikkstøtte.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Tjenester</h4>
+                    <ul class="footer-links">
+                        <li><a href="byggtjenester.html">Byggtjenester</a></li>
+                        <li><a href="transporttjenester.html">Transporttjenester</a></li>
+                        <li><a href="byggtjenester.html#renovering">Renovering</a></li>
+                        <li><a href="byggtjenester.html#innvendig">Kjøkkenmontering</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Selskapet</h4>
+                    <ul class="footer-links">
+                        <li><a href="om-oss.html">Om Oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="kontakt.html#befaring">Gratis Befaring</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-info">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>📞 <a href="tel:+47900XXXXX">900 XX XXX</a></li>
+                        <li>📧 <a href="mailto:post@marcinkevics-bygg.no">post@marcinkevics-bygg.no</a></li>
+                        <li>📍 Hedmarksgata 9, 0658 Oslo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 BYGG OG TRANSPORT MARCINKEVICS. Alle rettigheter reservert.</p>
+                <p class="org-number">Org.nr: 936 892 345</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
